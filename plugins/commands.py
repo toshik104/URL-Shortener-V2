@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 async def start(c:Client, m:Message):
 
     if m.from_user.id not in ADMINS:
-        return await m.reply_text(f"This bot works only for ADMINS of this bot. Make your own Bot.\n\n[Source Code]({SOURCE_CODE})")
+        return await m.reply_text(f"This bot works only for ADMINS of this bot. Make your own Bot contact - @potter_00")
 
     user_method = await db.get_bot_method(temp.BOT_USERNAME)
     if not user_method:
@@ -38,7 +38,7 @@ async def help_command(c, m):
             firstname=temp.FIRST_NAME,
             username=temp.BOT_USERNAME,
             repo=SOURCE_CODE,
-            owner="@ask_admin001" )
+            owner="@potter_00" )
     if WELCOME_IMAGE:
         return await m.reply_photo(photo=WELCOME_IMAGE, caption=s, reply_markup=HELP_REPLY_MARKUP)
     await m.reply_text(s, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
