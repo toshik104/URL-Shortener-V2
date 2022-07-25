@@ -17,7 +17,7 @@ MDISK_API = os.environ.get("MDISK_API")
 ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get("DATABASE_URL")
-WEBSITE = os.evviron.get('WEBSITE')
+WEBSITE = os.environ.get('WEBSITE')
 
 #  Optionnal variables
 INCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("INCLUDE_DOMAIN").split(",")) if os.environ.get("INCLUDE_DOMAIN") else []
