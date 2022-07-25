@@ -67,7 +67,7 @@ async def main_convertor_handler(message:Message, type:str, edit_caption:bool=Fa
     reply_markup = await reply_markup_handler(message, method_func)
 
     # Adding header and footer
-    shortenedText = f"{HEADER_TEXT}\n{shortenedText}\n{FOOTER_TEXT}"
+    shortenedText = f"**{shortenedText}\n{FOOTER_TEXT}**"
 
 
     # Used to get the file_id of the media. If the media is a photo and BANNER_IMAGE is set, it will
