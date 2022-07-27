@@ -52,7 +52,7 @@ InlineKeyboardButton('Cancel 🔐', callback_data='cancel')
                 return await m.reply(text=f"Are you sure you want to batch short?\n\nChannel: {channel_id}", reply_markup=InlineKeyboardMarkup(buttons))
 
     elif m.from_user.id not in ADMINS:
-        await m.reply_text(f"""This bot works only for ADMINS of this bot. Make your own Bot - @potter_00""")
+        await m.reply_text(f""" """)
 
 
 @Client.on_callback_query(filters.regex(r'^cancel') | filters.regex(r'^batch'))
