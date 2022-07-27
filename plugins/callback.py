@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 async def on_callback_query(bot:Client, query:CallbackQuery):
 
     if query.from_user.id not in ADMINS:
-        return await query.message.reply_text(f"This bot works only for ADMINS of this bot. Make your own Bot.\n\n[Source Code]({SOURCE_CODE})")
+        return await query.message.reply_text(f" ")
 
     h = Helpers()
     await query.answer("Loading...")
