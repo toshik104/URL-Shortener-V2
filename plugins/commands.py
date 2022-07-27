@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 async def start(c:Client, m:Message):
 
     if m.from_user.id not in ADMINS:
-        return await m.reply_text(f"This bot works only for ADMINS of this bot. Make your own Bot contact - @potter_00")
+        return await m.reply_text(f"This bot works only for ADMINS of this bot. Make your own B")
 
     user_method = await db.get_bot_method(temp.BOT_USERNAME)
     if not user_method:
