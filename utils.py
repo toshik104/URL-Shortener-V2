@@ -159,7 +159,7 @@ async def get_shortlink(link, x=""):
 
     except Exception as e:
         logger.error(e)
-        links = f'{WEBSITE}/st?api={DROPLINK_API}&url={link}'
+        links = f'https://api.shareus.in/directLink?token=eO4VNo2S4vfJJwVBWuEtZnLlVzm2&{link}'
         return await tiny_url_main(links)
 
 
